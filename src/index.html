@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Schmemory Game</title>
+  <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+      <header>
+        <h1 class="header__title">The Schmemory Game</h1>
+      </header>
+
+      <div class="scorePanel">
+
+        <div class="scorePanel__wrapper">
+            <div class="score__moves">
+                 <div class="movesContainer">
+                   <span class="moves">0</span> Moves
+                 </div>
+               </div>
+
+               <div class="score__timer">
+                 Playing Time:
+                 <div class="timeContainer">
+                   <span class="timer">0</span> seconds
+                 </div>
+               </div>
+
+               <div class="restart">
+                 <i class="fa fa-repeat"></i>
+               </div>
+        </div>
+
+
+        <ul class="deck">
+            <li class="deck__loading">Loading...</li>
+        </ul>
+      </div>
+
+    </div>
+
+
+  <div id="win" class="winModal">
+    <div class="winModal__content">
+      <h1>Congratulations! You win!</h1>
+      <div class="winModal__msg">
+        You won the game in
+        <span id="playTime"></span> seconds using <span id="moves"></span> moves.</div>
+      <button id="playAgain" class="button">Play again</button>
+    </div>
+  </div>
+</body>
+</html>
